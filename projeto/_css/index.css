@@ -19,6 +19,7 @@ a{
     background:white;
     max-width: 940px;
     margin: 0 auto;
+    letter-spacing: .5px;
 }
 /*Menu*/
 .menu{
@@ -76,7 +77,7 @@ a{
     margin: 0 auto;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
-        "mg descricao"
+        "img descricao"
         "img descricao"
     ;
     gap: 10px;
@@ -87,7 +88,7 @@ a{
 }
 .conteudo-img{
     grid-area: img;
-    margin: 10px 5px;
+    margin: 10px 15px;
 }
 .descricao-img{
     grid-area: descricao;
@@ -95,8 +96,25 @@ a{
     flex-wrap: wrap;
     flex-direction: column;
 }
+/*Segurança da Informação*/
+.seguranca{
+    display: flex;
+    flex-direction: column;
+}
+.seguranca h2{
+    text-align: center;
+}
+.seguranca img{
+    flex-grow: 1;
+    max-width: 500px;
+    align-self: center;
+}
+.seguranca p{
+    margin: 10px 15px;
+}
 /*Footer*/
 .footer{
     background: rgb(102, 191, 221);
+    padding: 10px;
     text-align: center;
 }
