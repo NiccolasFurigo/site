@@ -64,3 +64,33 @@ a{
 .nav ul li ul li a:hover{
     background-color: rgb(70, 195, 236);
 }
+/*Container*/
+.container{
+    display: grid;
+    max-width: 960px;
+    margin: 0 auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+        "img descricao"
+        "img descricao"
+    ;
+    gap: 10px;
+    align-items: center;
+}
+.container img{
+    max-width: 400px;
+}
+.conteudo-img{
+    grid-area: img;
+}
+.descricao-img{
+    grid-area: descricao;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+/*Footer*/
+.footer{
+    background: rgb(102, 191, 221);
+    text-align: center;
+}
