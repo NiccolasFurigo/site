@@ -5,7 +5,7 @@ body, ul, li, p{
     padding: 0;
 }
 body{
-    background: white;
+    background: rgb(241, 241, 241);
     font-family: Arial, Helvetica, sans-serif;
 }
 li{
@@ -14,6 +14,11 @@ li{
 a{
     text-decoration: none;
     color: black;
+}
+.corpo{
+    background:white;
+    max-width: 940px;
+    margin: 0 auto;
 }
 /*Menu*/
 .menu{
@@ -71,7 +76,7 @@ a{
     margin: 0 auto;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
-        "img descricao"
+        "mg descricao"
         "img descricao"
     ;
     gap: 10px;
@@ -82,6 +87,7 @@ a{
 }
 .conteudo-img{
     grid-area: img;
+    margin: 10px 5px;
 }
 .descricao-img{
     grid-area: descricao;
