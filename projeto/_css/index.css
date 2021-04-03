@@ -92,6 +92,7 @@ a{
 }
 .descricao-img{
     grid-area: descricao;
+    padding-right: 15px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
