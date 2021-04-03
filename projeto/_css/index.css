@@ -1,2 +1,66 @@
 @charset "UTF-8";
 
+body, ul, li, p{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+/*Menu*/
+.menu{
+    background: rgb(102, 191, 221);
+    display: flex;
+    padding: 15px 0;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    padding: 0 15px;
+    font-size: 2em;
+    color: white;
+}
+.nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+.nav ul a{
+    display: block;
+    margin: 0 10px;
+    padding: 10px;
+    font-size: .875em;
+    background: rgb(64, 178, 216);
+    text-transform: uppercase;
+}
+.nav ul a:hover{
+    background: rgb(70, 195, 236);
+}
+.nav ul li ul{
+    display: none;
+    position: absolute;
+    z-index: 2;
+}
+.nav ul li:hover ul{
+    display: block;
+    left: 10px;
+}
+.nav ul li ul li{
+    width: 107px;
+    border-radius: 4px;
+}
+.nav ul li ul li a{
+    margin: 0;
+}
+.nav ul li ul li a:hover{
+    background-color: rgb(70, 195, 236);
+}

@@ -1,5 +1,9 @@
 @charset "UFT-8";
 
+.slide-intro{
+    background: white;
+    min-height: 420px;
+}
 .slider{
     width: 700px;
     height: 400px;
@@ -13,6 +17,8 @@
     width: 500%;
     height: 100%;
     display: flex;
+    margin-top: 10px;
+    z-index: 1;
 }
 .navegation{
     display: flex;
@@ -25,8 +31,11 @@
     width: 10px;
     height: 10px;
     border-radius: 10px;
-    border: 2px solid blue;
+    border: 2px solid cyan;
     transition: 0.4s;
+}
+.radio:hover{
+    background: cyan;
 }
 .radio + .radio{
     margin-left: 30px;
