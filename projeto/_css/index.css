@@ -19,6 +19,7 @@ a{
     background:white;
     max-width: 940px;
     margin: 0 auto;
+    padding-bottom: 2px;
     letter-spacing: .5px;
 }
 /*Menu*/
@@ -129,6 +130,11 @@ a{
 }
 .seguranca p{
     margin: 10px 15px;
+}
+@media (max-width: 540px) {
+    .seguranca img{
+        max-width: 400px;
+    }
 }
 /*HardWare*/
 .hardware{
