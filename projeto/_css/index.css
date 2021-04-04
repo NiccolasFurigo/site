@@ -113,6 +113,41 @@ a{
 .seguranca p{
     margin: 10px 15px;
 }
+/*HardWare*/
+.hardware{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+        "titulo titulo titulo"
+        "hard1 hard2 hard3"
+        "hard1 hard2 hard3"
+    ;
+    gap: 10px;
+    margin: 10px;
+}
+.hardware h2{
+    grid-area: titulo;
+    grid-column: 2;
+    justify-self: center;
+}
+.hardware img{
+    max-width: 100%;
+}
+.hard1 {
+    grid-area: hard1;
+    border: 5px solid rgb(161, 161, 161);
+    background: rgb(161, 161, 161);
+}
+.hard2{
+    grid-area: hard2;
+    border: 5px solid rgb(161, 161, 161);
+    background: rgb(161, 161, 161);
+}
+.hard3{
+    grid-area: hard3;
+    border: 5px solid rgb(161, 161, 161);
+    background: rgb(161, 161, 161);
+}
 /*Footer*/
 .footer{
     background: rgb(102, 191, 221);

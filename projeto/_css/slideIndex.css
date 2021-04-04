@@ -1,7 +1,7 @@
 @charset "UFT-8";
 
 .slide-intro{
-    background: black;
+    background: rgb(161, 161, 161);
     min-height: 420px;
 }
 .slider{
