@@ -97,6 +97,23 @@ a{
     flex-wrap: wrap;
     flex-direction: column;
 }
+@media (max-width: 640px){
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "img"
+            "descricao"
+        ;
+    }
+    .descricao-img{
+        margin-left: 10px;
+        max-width: none;
+    }
+    .descricao-img h2{
+        text-align: center;
+    }
+}
 /*Segurança da Informação*/
 .seguranca{
     display: flex;
@@ -147,6 +164,36 @@ a{
     grid-area: hard3;
     border: 5px solid rgb(161, 161, 161);
     background: rgb(161, 161, 161);
+}
+@media (max-width: 680px) {
+    .hardware{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+            "titulo titulo"
+            "hard1 hard2"
+            "hard3 ."
+        ;
+    }
+    .hardware h2{
+        grid-column: span 2;
+        justify-self: center;
+    }
+}
+@media (max-width: 540px){
+    .hardware{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "titulo"
+            "hard1"
+            "hard2"
+            "hard3"
+        ;
+    }
+    .hardware h2{
+        justify-self: center;
+    }
 }
 /*Footer*/
 .footer{

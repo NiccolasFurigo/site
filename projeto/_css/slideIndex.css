@@ -54,6 +54,42 @@
     border-radius: 10px;
     float: left;
 }
+@media (max-width: 720px){
+    .slide-intro{
+        background: rgb(161, 161, 161);
+        min-height: 320px;
+    }
+    .slider{
+        width: 500px;
+        height: 300px;
+        overflow: hidden;
+        border-radius: 10px;
+    }
+    .navegation{
+        display: flex;
+        position: absolute;
+        top: 250px;
+        left: 200px;
+    }
+}
+@media (max-width: 540px){
+    .slide-intro{
+        background: rgb(161, 161, 161);
+        min-height: 220px;
+    }
+    .slider{
+        width: 400px;
+        height: 200px;
+        overflow: hidden;
+        border-radius: 10px;
+    }
+    .navegation{
+        display: flex;
+        position: absolute;
+        top: 150px;
+        left: 150px;
+    }
+}
 input[name='btnRadio']{
     position: absolute;
     visibility: hidden;
