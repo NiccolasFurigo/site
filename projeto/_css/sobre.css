@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+body{
+    letter-spacing: .5px;
+}
+.sobre{
+    display: flex;
+    align-items: center;
+    max-width: 960px;
+    margin: 10px auto;
+}
+.sobre img{
+    max-width: 400px;
+}
+.sobre-descricao{
+    flex-direction: column;
+    margin-left: 15px;
+}
+.sobre-descricao p + p{
+    margin-top: 10px;
+}
+@media (max-width: 640px){
+    .sobre{
+        flex-wrap: wrap;
+    }
+}
